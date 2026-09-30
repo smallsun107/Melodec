@@ -1,0 +1,24 @@
+[package]
+name = "rencm"
+version = "0.2.0"
+edition = "2021"
+description = "Streaming decoder for NetEase Cloud Music .ncm files"
+license = "MIT"
+
+[lib]
+name = "rencm"
+path = "src/lib.rs"
+
+[[bin]]
+name = "rencm"
+path = "src/main.rs"
+
+[dependencies]
+aes = "0.8"
+base64 = "0.22"
+serde_json = "1"
+sha2 = "0.10"
+
+[profile.release]
+opt-level = 3
+lto = true

@@ -1,0 +1,28 @@
+# Rust
+/rust/target/
+
+# Go
+/go/rencm
+/go/**/*.test
+
+# C++
+/cpp/build/
+/cpp/imgui.ini
+
+# macOS
+.DS_Store
+
+# editor / tool state
+/.commandcode/
+
+# inputs / outputs - never commit media, encrypted or decrypted
+*.ncm
+*.mp3
+*.jpg
+*.flac
+*.m4a
+*.ogg
+*.aac
+
+# ...but keep committed test fixtures despite the output ignores above
+!**/tests/fixtures/**
